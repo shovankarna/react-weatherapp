@@ -1,10 +1,10 @@
 import React from 'react';
 import moment from 'moment';
-import Axios from 'axios';
+
 
 
 export default function DisplayWeather(props) {
-    const { location, country, currdt, temp, maxTemp, minTemp, main, description, icon, humidity, windSpeed, clouds, sunrise, sunset, } = props.weatherData;
+    const { location, country, currdt, temp, maxTemp, minTemp, main, description, icon, humidity, windSpeed, clouds, sunrise, sunset } = props.weatherData;
 
     // function timeConverter(t) {
     //     var dt = new Date(t * 1000);
@@ -45,7 +45,7 @@ export default function DisplayWeather(props) {
                             {temp}°
                         </div>
                         <div className='icon'>
-                            <img src={imgsrc} />
+                            <img alt="" src={imgsrc} />
                         </div>
                     </div>
                     <div className='main-detail'>

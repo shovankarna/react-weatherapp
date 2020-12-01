@@ -29,7 +29,7 @@ class App extends React.Component {
         this.setState({ coords: newCoords })
         // console.log(this.state.coords)
         //Api Call
-        Axios.get(`http://api.openweathermap.org/data/2.5/weather?lat=${this.state.coords.latitude}&lon=${this.state.coords.longitude}&units=metric&appid=d3856252805c106a89495a655d00f5da`)
+        Axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=${this.state.coords.latitude}&lon=${this.state.coords.longitude}&units=metric&appid=d3856252805c106a89495a655d00f5da`)
           .then(res => {
             let weatherData = {
               location: res.data.name,
@@ -71,7 +71,7 @@ class App extends React.Component {
     event.preventDefault();
 
     //api call
-    Axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${this.state.inputData}&units=metric&appid=d3856252805c106a89495a655d00f5da`)
+    Axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${this.state.inputData}&units=metric&appid=d3856252805c106a89495a655d00f5da`)
       .then(res => {
         let weatherData = {
           location: res.data.name,
