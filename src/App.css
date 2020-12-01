@@ -1,0 +1,169 @@
+html{
+    font-size: 10px;
+}
+
+body {
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #192734;
+    background-image: url(./assets/pexels-benjamin-suter-3617500.jpg);
+    background-size:     cover;                      
+    background-repeat:   no-repeat;
+    background-position: center center;
+    color: #e4e6eb;
+}
+
+@media(min-width: 650px){
+    html{
+        font-size: 12px;
+    }
+}
+
+@media(min-width: 775px){
+    html{
+        font-size: 16px;
+    }
+}
+
+@media(min-width: 1024px){
+    html{
+        font-size: 18px;
+    }
+}
+
+input{
+    display: block;
+    margin : 0 auto;
+    width: 80%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 1.5rem;
+    color: #000000;
+    background-color: rgb(180, 180, 180);
+    font-family: 'Roboto Slab', serif;
+    margin-bottom: 3rem;
+    box-shadow: 0px 7px 14px #055757;
+}
+
+@media(min-width: 640px){
+    input{
+        width: 40%;
+    }
+}
+
+input:focus{
+    background-color: #e7e6e6;
+}
+
+.nav-head{
+    margin-top: 4rem;
+    text-align: center;
+    margin-bottom: 5rem;
+    font-family: 'Big Shoulders Stencil Text';
+    font-size: 3rem;
+}
+
+/* .searchbar-container{
+    display: flex;
+    justify-content: center;
+} */
+
+.main-body{
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media(min-width: 528px){
+    .main-body{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
+
+.location {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.current-date{
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.currentTemp{
+    font-size: 4rem;
+    margin: 0;
+    margin-top: 1rem;
+}
+
+.icon{
+    margin: 0;
+    margin-top: -1.8rem;
+}
+
+.temp-icon{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+.main-detail{
+    font-size: 2rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 2rem;
+    padding: 1rem;
+    display: inline-block;
+}
+
+.main-right {
+    margin-top: 2rem;
+}
+
+table{
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 2rem;
+    table-layout: auto;
+    width: 100%;
+}
+
+/* @media(min-width: 528px){
+    table{
+        table-layout: auto;
+        width: 100%;
+    }
+} */
+
+
+td, th {
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+.error{
+    width: 100%;
+    position: relative;
+}
+.errormessage{
+    margin: 2rem;
+    background-color: rgba(250, 6, 6, 0.459);
+    border-radius: 2rem;
+    padding: 1rem;
+    text-align: center;
+
+}
+
+.location-request {
+    margin: 3rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 2rem;
+    padding: 0.8rem;
+    text-align: center;
+}
+
+
+
+
